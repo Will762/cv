@@ -1,29 +1,84 @@
-html * {
+* {
     box-sizing: border-box;
+    font-family: Avenir, Helvetica, sans-serif;
+    font-size: 12pt;
+    color: #333;
+    line-height: 1.25;
+    transition: color 1s;
 }
 
 body {
-    --bg-color: #eee;
-    --text-color: #333;
-    background-color: var(--bg-color);
+    background-color: #eee;
+    transition: background-color 1s;
     margin: 0;
 }
 
-.dark {
-    @media screen {
-        --bg-color: #333;
-        --text-color: #eee;        
-    }
+h1, h2, h3 {
+    line-height: 1;
+    margin-bottom: 0;
+
+}
+
+h1, h2 {
+    font-family: Palatino, Georgia, serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    font-size: 22pt;
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 1em;
+    font-size: 18pt;
+}
+
+h3 {
+    margin-top: .75em;
+}
+
+p, ul {
+    margin-top: .25em;
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 2em;
+
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+a:not(:hover) {
+    text-decoration: none;
+}
+
+.a4,
+.controls {
+    width: 210mm;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.a4 {
+    height: 297mm;
+    padding: 8mm;
 }
 
 .controls {
-    width: 210mm;
-    margin: 5px auto;
-    text-align: right;
-    
-    @media print {
-        display: none;
-    }
+    display: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: right;    
 }
 
 .sun {
@@ -43,65 +98,13 @@ body {
     font-size: 30px;
 }
 
+.print {
+    font-size: 24px;
+}
+
 .hidden-text {
     display: inline-block;
     text-indent: -9999px;
-}
-
-.a4 {
-    width: 210mm;
-    height: 297mm;
-    padding: 10mm;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media screen {
-        outline: 1px solid #bbb;
-    }
-}
-
-button {
-    background-color: transparent;
-    padding: 0;
-    width: 50px;
-    height: 50px;
-    vertical-align: bottom;
-    cursor: pointer;
-}
-
-* {
-    font-family: Avenir, Helvetica, sans-serif;
-    line-height: 1.2;
-    color: var(--text-color);
-    font-size: 12pt;
-}
-
-
-h1, h2 {
-    font-family: Palatino;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-h1 {
-    font-size: 22pt;
-    margin-top: 0;
-}
-
-h2 {
-    margin-top: 1em;
-    font-size: 18pt;
-}
-
-h3 {
-    margin-top: .75em;
-    margin-bottom: 0;
-}
-
-p, ul {
-    margin-top: .25em;
-    margin-bottom: 0;
 }
 
 .line {
@@ -110,8 +113,30 @@ p, ul {
     align-items: flex-end;
 }
 
-.line span + span {
+.a4 span + span {
     border-left: 1px solid currentColor;
     margin-left: .25em;
     padding-left: .25em;
+}
+
+.a4 h3 span + span {
+    border-left-width: 2px;
+}
+
+@media screen {
+    .dark {
+        background-color: #333;   
+    }
+
+    .dark * {
+            color: #eee;
+    }
+    
+    .controls {
+        display: block;
+    }
+
+    .a4 {
+        outline: 1px solid #bbb;
+    }
 }

@@ -3,27 +3,75 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hire Will</title>
+    <title>Will Hayman CV</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <div class="controls">
         <button onClick="document.body.classList.toggle('dark')"><span class="moon">&#9790;</span><span class="sun">&#9728;</span><span class="hidden-text">Light / dark mode</span></button>
-        <button onClick="alert('For proper formatting, set print margins to \'None\'.');print()">&#128424;<span class="hidden-text">Print</span></button>
+        <button class="print" onClick="print()">&#128424;<span class="hidden-text">Print</span></button>
     </div>
 
     <div class="a4">
         <section>
             <h1>Will Hayman</h1>
             <div class="line">
-                <a target="_blank" href="mailto:wjshayman@gmail.com">wjshayman@gmail.com</a>
+                <a target="_blank" href="mailto:willhayman@outlook.com">willhayman@outlook.com</a>
                 <a target="_blank" href="https://github.com/will762">github.com/will762</a>
             </div>
 
             <div class="line">
+                <a href="tel:+447515499567">(+44) 07515 499 567</tel>
                 <a target="_blank" href="https://www.linkedin.com/in/will-hayman-web">linkedin.com/in/will-hayman-web</a>
-                <a target="_blank" href="https://codepen.io/will762">codepen.io/will762</a>
             </div>
+        </section>
+        
+        <section>
+            <h2>Employment</h2>
+            <div class="line">
+                <h3><span>Stova (formerly Aventri)</span><span>Front-end Developer</span></h3>
+                <p><strong>January 2019 – current</strong></p>
+            </div>
+
+            <p><em>JavaScript, jQuery, Bootstrap, SCSS, twig, git, Postman</em></p>
+
+            <ul>
+                <li>Building branded event websites to exacting enterprise standards; clients include many household names: AWS, Barclays, HSBC, JP Morgan, Allianz, Siemens, Nokia, Lufthansa, Airbus, Schneider Electric, Department for Business and Trade (UK Govt)</li>
+                <li>Utilising best-practice accessibility and usability</li>
+                <li>Leveraging and extending company CMS to allow users to build and manage websites</li>
+                <li>Building JS and CSS look-and-feel APIs to allow users to build and manage on-brand websites</li>
+                <li>Building front-end features that are not natively supported by the CMS</li>
+                <li>Consuming internal APIs leveraging twig templates, consuming external APIs</li>
+                <li>Contributing to and improving internal team codebase, led a major refactor of website templates</li>
+                <li>Scoping and quoting new projects, client-facing communication including senior stakeholders</li>
+                <li>Troubleshooting and fixing user tickets</li>
+                <li>On-boarding, mentoring and training</li>
+            </ul>
+
+            <div class="line">
+                <h3><span>NSRA Ltd</span><span>Sales Manager</span></h3>
+                <p><strong>November 2015 – December 2018</strong></p>
+            </div>
+
+            <p><em>HTML, HTML email, CSS, Shopify</em></p>
+            <ul>
+                <li>Managing an online and in-store sport equipment sales business, over £1.2m per annum revenue</li>
+                <li>Managing product listings, groupings, tagging, descriptions etc within Shopify CMS</li>
+                <li>SEO and marketing campaigns</li>
+                <li>Designing and maintaining HTML emails for customer communication and marketing</li>
+            </ul>
+
+            <div class="line">
+                <h3><span>Breitling</span><span>Boutique Watchmaker, Bond Street London</span></h3>
+                <p><strong>February 2014 – November 2015</strong></p>
+            </div>
+
+            <ul>
+                <li>Swiss watch technician</li>
+                <li>Inspecting, estimating and performing repairs on luxury timepieces</li>
+                <li>Custom-facing in a top-end retail environment</li>
+            </ul>
+
         </section>
 
         <section>
@@ -45,44 +93,30 @@
             </div>
             
             <div class="line">
-                <p><span>English literature, Politics, Philosophy</span><span>AS: Extended Project, Economics</span></p>
-                <p><span>3 x A</span><span>1 x A, 1 x A*</span></a>
+                <p><span>A-level: English, Politics, Philosophy</span><span>AS-level: Extended Project, Economics</span></p>
+                <p><span>A, A, A</span><span>A*, A</span></a>
             </div>
         </section>
 
         <section>
-            <h2>Employment</h2>
-            <div class="line">
-                <h3>Stova (formerly Aventri)</h3>
-                <p><strong>January 2019 – current</strong></p>
-            </div>
-
-            <p><em>JavaScript, jQuery, Bootstrap, SCSS</em></p>
-
-            <ul>
-                <li>Building branded event websites to exacting enterprise standards; including many household names: Barclays, HSBC, JP Morgan, Allianz, Siemens, Schneider Electric, Lufthansa, Airbus, Adecco Group, Nokia, Department of Business and Trade (UK Govt)</li>
-                <li>Utilising best-practice accessibility and usability</li>
-                <li>Leveraging and extending our CMS to allow users to build and manage their own websites</li>
-                <li>Building front-end features that aren't natively supported by the CMS</li>
-                <li>Building CSS/JS styling APIs to allow users to build and manage their own on-brand event websites</li>
-                <li>Scoping and quoting new projects, client-facing communication including senior stakeholders, design meetings</li>
-                <li>On-boarding and mentoring juniors</li>
-            </ul>
+            <h2>Projects</h2>
 
             <div class="line">
-                <h3>NSRA Ltd</h3>
-                <p><strong>?? 2016 – December 2018</strong></p>
+                <h3>Unsplash Image Search</h3>
+                <a target="_blank" href="https://unsplash-will762.vercel.app">unsplash-will762.vercel.app</a>
             </div>
 
-            <p><em>HTML, CSS, HTML email, Shopify</em></p>
-            <ul>
-                <li>Managing an online and in-store sport equipment retail business</li>
-                <li>Managing product listings, groupings, tagging, descriptions etc within Shopify CMS</li>
-                <li>Designing and maintaining HTML emails within Shopify CMS</li>
-            </ul>
+            <p><em>Vue.js, Node.js, Vercel</em></p>            
+            <p>Simple project to introduce myself to Vue.js. The user can enter a search term, and images are returned from the Unsplash rest API via a Vercel serverless edge function. More an experiment designed to include as much reactivity as possible than a realistic UI.</p>
 
+            <div class="line">
+                <h3>Algorithms and coding challenges</h3>
+                <a target="_blank" href="https://github.com/will762/nd/">github.com/will762/nd/</a>
+            </div>        
 
+            <p>This repo is a collection of coding challenges from Advent Of Code, CodeWars, and other sources. Problems are committed as branches, problems statements are either linked in the commit message, or commented above the code.</p>
         </section>
+
     </div>
   </body>
 </html>
